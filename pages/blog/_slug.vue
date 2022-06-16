@@ -31,7 +31,7 @@ export default {
         { name: 'twitter:site', content: '@shusukeioku' },
         { name: 'twitter:title', content: this.post.title },
         { name: 'twitter:description', content: this.post.description },
-        { name: 'twitter:image', content: this.post.image1 }
+        { property: 'og:image', content: this.post.image1 }
       ]
     }
   }
