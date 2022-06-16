@@ -78,6 +78,7 @@ export default {
   padding: .5em 0;
 }
 .box {
-  width: 500px;
+  max-width: 500px;
+  width: 95%;
 }
 </style>
