@@ -27,9 +27,10 @@ export default {
   head() {
     return {
       meta: [
-        { hid: 'og:description', property: 'og:description', content: this.post.description },
-        { hid: 'og:url', property: 'og:url', content: this.$route.fullPath },
-        { hid: 'og:image', property: 'og:image', content: this.post.image },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@shusukeioku' },
+        { name: 'twitter:title', content: this.post.title },
+        { name: 'twitter:description', content: this.post.description },
       ]
     }
   }
