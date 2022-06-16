@@ -40,11 +40,7 @@ export default {
           siteConfig.sitedescription ||
           process.env.npm_package_description ||
           '',
-      },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@shusukeioku' },
-      { name: 'twitter:title', content: 'shusukeioku' },
-      { name: 'twitter:description', content: "Shusuke Ioku's Web Page" },
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
