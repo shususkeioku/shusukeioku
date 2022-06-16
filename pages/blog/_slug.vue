@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
+    class="mx-auto mt-24 prose xl:prose-xl lg:prose-lg md:prose-md"
   >
     <h2>{{ post.title }}</h2>
     <p>{{ post.date.substring(0,10) }}</p>
@@ -41,7 +41,7 @@ export default {
 <style lang="css">
 .prose {
   color: rgb(181, 180, 180)!important;
-  max-width: 650px;
+  max-width: 600px;
   width: 99%;
 }
 
