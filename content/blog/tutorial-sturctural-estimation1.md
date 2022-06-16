@@ -9,7 +9,7 @@ tags:
   - tutorial
 ---
 
-This is a replication of [経済セミナー 連載「実証ビジネス・エコノミクス」第７回](https://sites.google.com/view/keisemi-ebiz/%E7%AC%AC7%E5%9B%9E?authuser=0) with Python. Math details explained only on the book is omitted for copyright concerns. 
+This is a replication of [経済セミナー 連載「実証ビジネス・エコノミクス」第７回](https://sites.google.com/view/keisemi-ebiz/%E7%AC%AC7%E5%9B%9E?authuser=0) with Python. Math details explained only on the book are omitted for copyright concerns. 
 
 ### Setup
 
