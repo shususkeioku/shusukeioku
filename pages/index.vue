@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-wrap w-fit justify-around">
       <div class="text-base intro" lang="en">
-        <h2 class="text-3xl text-white font-bold text-center mt-12">Hi! &#9786;</h2>
+        <h2 class="text-3xl text-white font-bold text-center mt-12">Hi.</h2>
         <p>
           My name is 井奥崇輔. I study politics with a particular focus on interstate violence and state formation. I recieved an B.A. (Philosophy) from the University of Tokyo and an M.A. (Political Science) from Waseda University.
         </p>
@@ -25,8 +25,8 @@
             class="py-2 box"
           >
           <div class="flex">
-            <div>
-              <img :src="post.image" class="w-16 h-16 rounded-full shrink-0 border-gray border-2 mr-2">
+            <div class="shrink-0 mr-2">
+              <img :src="post.image" class="w-16 h-16 rounded-full border-gray border-2">
             </div>
             <div>
               <h3 class="text-white text-lg">
