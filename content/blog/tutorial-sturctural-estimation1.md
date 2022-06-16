@@ -1,5 +1,5 @@
 ---
-title: Structural Estimation of Dynamic Models 1
+title: "Tutorial: Structural Estimation of Dynamic Models 1"
 date: 2022-06-16
 image: "/img/str-est-dyn-1.png"
 description: This is a replication of 経済セミナー 連載「実証ビジネス・エコノミクス」第７回 with Python.
