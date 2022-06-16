@@ -50,7 +50,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css' },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: 'preconnect', href: "https://fonts.gstatic.com", crossorigin},
+      { rel: 'preconnect', href: "https://fonts.gstatic.com" },
       { href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Ubuntu:wght@400;700&display=swap', rel: 'stylesheet' }
     ],
   },
