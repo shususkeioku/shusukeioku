@@ -42,6 +42,7 @@ export default {
 .prose {
   color: rgb(181, 180, 180)!important;
   max-width: 650px;
+  width: 99%;
 }
 
 .prose a {

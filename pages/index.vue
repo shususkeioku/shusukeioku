@@ -72,13 +72,13 @@ export default {
 <style lang="css">
 .intro {
   max-width: 500px;
-  width: 95%;
+  width: 99%;
 }
 .intro p {
   padding: .5em 0;
 }
 .box {
   max-width: 500px;
-  width: 95%;
+  width: 99%;
 }
 </style>
