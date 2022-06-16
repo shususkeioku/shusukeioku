@@ -22,6 +22,7 @@ export default {}
 </script>
 <style scoped>
 .icon {
-  width: 400px;
+  max-width: 400px;
+  width: 95%;
 }
 </style>
