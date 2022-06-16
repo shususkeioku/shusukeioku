@@ -3,7 +3,7 @@
     <img src="/img/icon.jpg" class="w-20 h-20 rounded-full shrink-0">
     <div class="ml-5">
       <nuxt-link to="/">
-        <h1 class="m-0 font-bold text-base text-white">
+        <h1 class="m-0 text-base text-white">
           Shusuke Ioku
         </h1>
         <p class="m-0 text-xs">
