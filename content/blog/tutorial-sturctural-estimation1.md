@@ -55,7 +55,7 @@ states.head()
 
 ### Prepare the Transition Matrix
 
-Let's assume true parametors and generate the transition matrix given them. 
+Let's assume true parameters and generate the transition matrix given them. 
 
 ```python
 def gen_m_trans(kappa):
