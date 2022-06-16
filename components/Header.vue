@@ -23,6 +23,6 @@ export default {}
 <style scoped>
 .icon {
   max-width: 400px;
-  width: 95%;
+  width: 99%;
 }
 </style>
