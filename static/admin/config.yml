@@ -1,0 +1,91 @@
+display_url: https://nuxt-starter-netlify-cms.netlify.app
+site_url: https://nuxt-starter-netlify-cms.netlify.app
+logo_url: https://nuxt-starter-netlify-cms.netlify.app/icon.png
+
+publish_mode: editorial_workflow
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'chore({{collection}}): create “{{slug}}”'
+    update: 'chore({{collection}}): update “{{slug}}”'
+    delete: 'chore({{collection}}): delete “{{slug}}”'
+    uploadMedia: 'chore(media): [skip ci] upload “{{path}}”'
+    deleteMedia: 'chore(media): [skip ci] delete “{{path}}”'
+
+media_folder: static/img
+public_folder: /img
+
+# Docs: https://www.netlifycms.org/docs/configuration-options/#collections
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    format: frontmatter
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: '{{dirname}}/{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: '/content/index.md'
+        label: 'Landing Page'
+        name: 'index'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+          - {label: Description, name: description, widget: string}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+      - file: '/content/about.md'
+        label: 'About'
+        name: 'about'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
+      - file: '/content/products.md'
+        label: 'Products Page'
+        name: 'products'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+          - {label: Full_image, name: full_image, widget: image}
+          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+  - label: 'Site settings'
+    name: 'site'
+    files:
+      - label: 'Info'
+        name: 'info'
+        file: 'content/site/info.json'
+        format: json
+        editor:
+          preview: false
+        fields:
+          - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
+          - {
+              label: Site Description,
+              name: sitedescription,
+              widget: string,
+              hint: 'This is used as descriptive text for links that link to this site',
+            }
+          - {
+              label: Site Language,
+              name: sitelang,
+              widget: string,
+              pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
+            }
