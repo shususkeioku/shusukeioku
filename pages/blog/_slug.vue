@@ -61,6 +61,10 @@ h2, h3 {
 a:visited {
   color: white!important
 }
+
+.math-display {
+  overflow-x: scroll;
+}
 </style>
   
 </style>
