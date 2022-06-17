@@ -27,7 +27,7 @@ export default {
   head() {
     return {
       meta: [
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@shusukeioku' },
         { name: 'twitter:title', content: this.post.title },
         { name: 'twitter:description', content: this.post.description },
