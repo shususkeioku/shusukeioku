@@ -59,7 +59,7 @@
 export default {
   async asyncData({ $content }) {
     const page = await $content('index').fetch()
-    const posts = await $content('blog').fetch()
+    const posts = await $content('blog').sortBy('date').fetch()
 
     return {
       page,
