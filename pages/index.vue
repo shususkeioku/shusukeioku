@@ -4,7 +4,7 @@
       <div class="text-base intro" lang="en">
         <h2 class="text-3xl text-white font-bold text-center mt-12">Hi.</h2>
         <p>
-          My name is 井奥崇輔. I study politics with a particular focus on interstate violence and state formation. I recieved an B.A. (Philosophy) from the University of Tokyo and an M.A. (Political Science) from Waseda University.
+          My name is 井奥崇輔. I study politics with a particular focus on interstate violence and state formation. I recieved a B.A. (Philosophy) from the University of Tokyo and an M.A. (Political Science) from Waseda University.
         </p>
         <p>
           My main project is the formal modeling and structural estimation of <span class="text-white font-bold">dynamic coercive diplomacy</span>. Previous theoretical studies of interstate conflict typically have dealt with coercive diplomacy as a one-shot game. I instead propose a dynamic model of coercive bargaining that captures the interaction as an infinite sequence of signaling/learning continuing on a "gray zone" between peace and military conflict. This yields novel insights into the strategic rationality of low-level violence between adversaries, alliance credibility, and the sources of dangerous interstate crises.
